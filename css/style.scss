@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+input,
+textarea,
+button {
+    outline: none;
+    box-shadow: none;
+}
+
+@font-face {
+    font-family: Enso;
+    src: url(../font/enso.ttf);
+}
+
+$color-btn: #8BC34A;
+$color-text: #283238;
+$color-title: #444444;
+.col-sm-12,
+.col-md-12,
+.col-xl-12 {
+    display: flex;
+}
+
+button.start-now {
+    height: 50px;
+    width: 195px;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: 2px solid #8BC34A;
+    border-radius: 100px;
+    background: linear-gradient(311.12deg, #B4EC51 0%, #429321 100%);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.content-mobile {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    height: 875px;
+    background: {
+        image: url(../image/banner.jpg);
+        size: cover;
+        position: center center;
+    }
+    .header-top {
+        font-size: 12px;
+        padding-top: 43px;
+        a {
+            color: $color-text;
+            letter-spacing: 1px;
+            line-height: 36px;
+            margin-right: 38px;
+            white-space: nowrap;
+            text-transform: uppercase;
+        }
+        .sign-in {
+            height: 36px;
+            width: 82px;
+            border: 2px solid $color-btn;
+            border-radius: 100px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+            color: $color-btn;
+            line-height: 16px;
+        }
+    }
+    .logo {
+        padding-top: 165px;
+        h1 {
+            color: #AED581;
+            font-family: Enso;
+            font-size: 64px;
+            line-height: 77px;
+        }
+    }
+    .criteria {
+        text-align: center;
+        align-items: center;
+        padding-top: 53px;
+        img {
+            width: 52px;
+            margin: 0 auto;
+        }
+        h3 {
+            padding-top: 14px;
+            font-size: 36px;
+            line-height: 48px;
+        }
+    }
+    .slogan {
+        font-size: 18px;
+        font-style: italic;
+        color: $color-text;
+        padding-top: 53px;
+        padding-bottom: 31px;
+    }
+    .btn-top {
+        margin: 0 auto;
+    }
+}
+
+.wrapper {
+    .box {
+        padding: 100px 0;
+        .content-img {
+            img {
+                max-width: 100%;
+            }
+        }
+        .content {
+            max-width: 100%;
+            .content-title {
+                height: 63px;
+                width: 363px;
+                line-height: 63px;
+                img {
+                    margin: 13px 0;
+                    width: 36px;
+                }
+                p {
+                    font-size: 48px;
+                    font-weight: 300;
+                    margin-left: 54px;
+                    color: $color-title
+                }
+            }
+            .meta-title {
+                font-style: italic;
+                font-size: 14px;
+                line-height: 19px;
+                color: $color-text;
+                padding-top: 15px;
+            }
+            .content-description {
+                font-size: 13px;
+                line-height: 24px;
+                text-align: justify;
+                color: $color-text;
+                letter-spacing: 0.15px;
+                padding-top: 25px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+.manager {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 265.75px;
+        max-width: 480px;
+        background: {
+            image: url(../image/banner-mobile.jpg);
+        }
+        .header-top {
+            padding-top: 15px;
+            padding-right: 23px;
+            a {
+                line-height: 36px;
+                font-size: 12px;
+                margin-right: 23px;
+                font-weight: 500;
+            }
+        }
+        .logo {
+            padding-top: 8px;
+            h1 {
+                font-size: 24px;
+                line-height: 29px;
+            }
+        }
+        .criteria {
+            padding-top: 20px;
+            img {
+                width: 20px;
+                margin: 0 auto;
+            }
+            h3 {
+                padding-top: 8px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        .slogan {
+            padding: 15px 0;
+            line-height: 11px;
+            width: 285px;
+            font-size: 9px;
+        }
+        .btn-top {
+            width: 144px;
+            height: 40px;
+            margin: 0 auto;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+//     .header {
+//         width: 100%;
+//         height: 875px;
+//         background: {
+//             image: url(../image/banner.jpg);
+//             size: cover;
+//             position: center center;
+//         }
+//         .header-top {
+//             font-size: 12px;
+//             padding-top: 43px;
+//             a {
+//                 color: $color-text;
+//                 letter-spacing: 1px;
+//                 line-height: 36px;
+//                 margin-right: 38px;
+//                 white-space: nowrap;
+//                 text-transform: uppercase;
+//             }
+//             .sign-in {
+//                 height: 36px;
+//                 width: 82px;
+//                 border: 2px solid $color-btn;
+//                 border-radius: 100px;
+//                 text-transform: uppercase;
+//                 letter-spacing: 1px;
+//                 font-size: 12px;
+//                 color: $color-btn;
+//                 line-height: 16px;
+//             }
+//         }
+//         .logo {
+//             padding-top: 165px;
+//             h1 {
+//                 color: #AED581;
+//                 font-family: Enso;
+//                 font-size: 64px;
+//                 line-height: 77px;
+//             }
+//         }
+//         .criteria {
+//             text-align: center;
+//             align-items: center;
+//             padding-top: 53px;
+//             img {
+//                 width: 52px;
+//                 margin: 0 auto;
+//             }
+//             h3 {
+//                 padding-top: 14px;
+//                 font-size: 36px;
+//                 line-height: 48px;
+//             }
+//         }
+//         .slogan {
+//             font-size: 18px;
+//             font-style: italic;
+//             color: $color-text;
+//             padding-top: 53px;
+//         }
+//     }
+// }

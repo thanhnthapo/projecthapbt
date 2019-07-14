@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  box-shadow: none;
+}
+
+@font-face {
+  font-family: Enso;
+  src: url(../font/enso.ttf);
+}
+.col-sm-12,
+.col-md-12,
+.col-xl-12 {
+  display: flex;
+}
+
+button.start-now {
+  height: 50px;
+  width: 195px;
+  color: #FFFFFF;
+  font-size: 16px;
+  border: 2px solid #8BC34A;
+  border-radius: 100px;
+  background: linear-gradient(311.12deg, #B4EC51 0%, #429321 100%);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.content-mobile {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  height: 875px;
+  background-image: url(../image/banner.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.header .header-top {
+  font-size: 12px;
+  padding-top: 43px;
+}
+.header .header-top a {
+  color: #283238;
+  letter-spacing: 1px;
+  line-height: 36px;
+  margin-right: 38px;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.header .header-top .sign-in {
+  height: 36px;
+  width: 82px;
+  border: 2px solid #8BC34A;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: #8BC34A;
+  line-height: 16px;
+}
+.header .logo {
+  padding-top: 165px;
+}
+.header .logo h1 {
+  color: #AED581;
+  font-family: Enso;
+  font-size: 64px;
+  line-height: 77px;
+}
+.header .criteria {
+  text-align: center;
+  align-items: center;
+  padding-top: 53px;
+}
+.header .criteria img {
+  width: 52px;
+  margin: 0 auto;
+}
+.header .criteria h3 {
+  padding-top: 14px;
+  font-size: 36px;
+  line-height: 48px;
+}
+.header .slogan {
+  font-size: 18px;
+  font-style: italic;
+  color: #283238;
+  padding-top: 53px;
+  padding-bottom: 31px;
+}
+.header .btn-top {
+  margin: 0 auto;
+}
+
+.wrapper .box {
+  padding: 100px 0;
+}
+.wrapper .box .content-img img {
+  max-width: 100%;
+}
+.wrapper .box .content {
+  max-width: 100%;
+}
+.wrapper .box .content .content-title {
+  height: 63px;
+  width: 363px;
+  line-height: 63px;
+}
+.wrapper .box .content .content-title img {
+  margin: 13px 0;
+  width: 36px;
+}
+.wrapper .box .content .content-title p {
+  font-size: 48px;
+  font-weight: 300;
+  margin-left: 54px;
+  color: #444444;
+}
+.wrapper .box .content .meta-title {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 19px;
+  color: #283238;
+  padding-top: 15px;
+}
+.wrapper .box .content .content-description {
+  font-size: 13px;
+  line-height: 24px;
+  text-align: justify;
+  color: #283238;
+  letter-spacing: 0.15px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.manager .col-md-5ths {
+  width: 20%;
+  float: left;
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 265.75px;
+    max-width: 480px;
+    background-image: url(../image/banner-mobile.jpg);
+  }
+  .header .header-top {
+    padding-top: 15px;
+    padding-right: 23px;
+  }
+  .header .header-top a {
+    line-height: 36px;
+    font-size: 12px;
+    margin-right: 23px;
+    font-weight: 500;
+  }
+  .header .logo {
+    padding-top: 8px;
+  }
+  .header .logo h1 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .header .criteria {
+    padding-top: 20px;
+  }
+  .header .criteria img {
+    width: 20px;
+    margin: 0 auto;
+  }
+  .header .criteria h3 {
+    padding-top: 8px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .header .slogan {
+    padding: 15px 0;
+    line-height: 11px;
+    width: 285px;
+    font-size: 9px;
+  }
+  .header .btn-top {
+    width: 144px;
+    height: 40px;
+    margin: 0 auto;
+  }
+}
