@@ -17,69 +17,74 @@
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/themify-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reponsive.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-12 justify-content-end header-top">
+                <div class="col-sm-12 col-12 justify-content-end header-top d-flex">
                     <a href="#">about us</a>
                     <button class="sign-in">sign in</button>
                 </div>
-                <div class="col-sm-12 col-12 justify-content-center logo">
+                <div class="col-sm-12 col-12 justify-content-center logo d-flex">
                     <h1>hapoERP</h1>
                 </div>
                 <div class="col-sm-4 col-4 criteria">
-                    <img class="image-reponsive" src="image/quatang.svg" alt="">
+                    <i class="ti-gift"></i>
                     <h3>Better</h3>
                 </div>
                 <div class="col-sm-4 col-4 criteria">
-                    <img class="image-reponsive" src="image/time.svg " alt=" ">
+                    <i class="ti-alarm-clock"></i>
                     <h3>Faster</h3>
                 </div>
                 <div class="col-sm-4 col-4 criteria">
-                    <img class="image-reponsive" src="image/like.svg " alt=" ">
+                    <i class="ti-thumb-up"></i>
                     <h3>Together</h3>
                 </div>
-                <div class="col-sm-12 col-12 justify-content-center slogan">
+                <div class="col-sm-12 col-12 justify-content-center slogan d-flex">
                     <p>Lorem ipsum is simply dummy text of the printing and typesetting industry</p>
                 </div>
-                <button class="btn-top start-now"><span>START NOW</span></button>
+                <button class="btn-top btn-global"><span>START NOW</span></button>
             </div>
         </div>
     </header>
     <section class="wrapper">
         <div class="container">
             <div class="row box">
-                <div class="col-sm-6 col-12 content-img pl-0">
+                <div class="col-sm-6 col-12 content-img pl-0 d-none d-sm-block">
                     <img class="img-responsive" src="image/img-web.jpg " alt=" ">
                 </div>
                 <div class="col-sm-6 col-12 content pr-0">
-                    <div class="content-title">
-                        <img class="img-responsive float-left" src="image/danhhieu.svg " alt=" ">
+                    <div class="content-title d-flex">
+                        <i class="ti-bookmark-alt"></i>
                         <p>Today I Learnt </p>
                     </div>
                     <div class="meta-title">
                         <p>Lorem ipsum is simply dummy text of the printing and typesetting industry</p>
                     </div>
+                    <div class="d-block d-sm-none content-img">
+                        <img class="img-reponsive" src="image/img-web.jpg" alt="">
+                    </div>
                     <div class="content-description">
                         <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
                             specimen book. it has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. it was popularised in the 1960s with the release of letraset sheets containing lorem ipsum
                             passages, and more recently with desktop publishing software like aldus pagemaker including versions of lorem ipsum.</p>
                     </div>
-                    <button class="start-now btn-body"><span>START NOW</span></button>
+                    <button class="btn-global btn-body"><span>START NOW</span></button>
                 </div>
             </div>
         </div>
     </section>
-    <section class="wrapper">
+    <section class="wrapper shadow bg-white rounded">
         <div class="container">
             <div class="row box">
                 <div class="col-sm-6 col-12 content pl-0">
-                    <div class="content-title">
-                        <img class="img-responsive float-left" src="image/write.svg " alt=" ">
-                        <p>Daily report</p>
+                    <div class="content-title d-flex">
+                        <i class="ti-write"></i>
+                        <p>Daily report </p>
                     </div>
                     <div class="meta-title">
                         <p>Lorem ipsum is simply dummy text of the printing and typesetting industry</p>
@@ -89,75 +94,79 @@
                             specimen book. it has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. it was popularised in the 1960s with the release of letraset sheets containing lorem ipsum
                             passages, and more recently with desktop publishing software like aldus pagemaker including versions of lorem ipsum.</p>
                     </div>
-                    <button class="start-now btn-body"><span>START NOW</span></button>
+                    <div class="col-sm-6 col-12 content-img pr-0 d-block d-sm-none">
+                        <img class="img-responsive" src="image/daily-report.png" alt=" ">
+                    </div>
+                    <button class="btn-global btn-body"><span>START NOW</span></button>
                 </div>
-                <div class="col-sm-6 col-12 content-img pr-0">
+                <div class="col-sm-6 col-12 content-img pr-0 d-none d-sm-block">
                     <img class="img-responsive" src="image/daily-report.png" alt=" ">
                 </div>
             </div>
         </div>
     </section>
     <section class="manager">
-        <div class="container d-flex justify-content-between">
-            <div class="col-sm-5ths">
-                <div class="corner-greate">
-                    <img src="image/write.svg " width="30px " alt=" ">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="col-sm-5ths">
+                    <div class="corner-greate d-flex flex-column justify-content-center">
+                        <span class="ti-write"></span>
+                    </div>
+                    <div class="corner-small d-flex justify-content-center">
+                        <span class="number">1</span>
+                    </div>
+                    <p>daily report</p>
                 </div>
-                <div class="corner-small d-flex justify-content-center">
-                    <span class="number">1</span>
+                <div class="col-sm-5ths">
+                    <div class="corner-greate d-flex flex-column justify-content-center">
+                        <span class="ti-bookmark-alt"></span>
+                    </div>
+                    <div class="corner-small d-flex justify-content-center">
+                        <span class="number">2</span>
+                    </div>
+                    <p>daily report</p>
                 </div>
-                <p>daily report</p>
+                <div class="col-sm-5ths">
+                    <div class="corner-greate d-flex flex-column justify-content-center">
+                        <span class="ti-layout-list-thumb"></span>
+                    </div>
+                    <div class="corner-small d-flex justify-content-center">
+                        <span class="number ">3</span>
+                    </div>
+                    <p>daily report</p>
+                </div>
+                <div class="col-sm-5ths d-none d-sm-block">
+                    <div class="corner-greate d-flex flex-column justify-content-center">
+                        <span class="ti-face-smile"></span>
+                    </div>
+                    <div class="corner-small d-flex justify-content-center">
+                        <span class="number">4</span>
+                    </div>
+                    <p>daily report</p>
+                </div>
+                <div class="col-sm-5ths d-none d-sm-block">
+                    <div class="corner-greate d-flex flex-column justify-content-center">
+                        <span class="ti-calendar"></span>
+                    </div>
+                    <div class="corner-small">
+                        <span class="number d-flex justify-content-center">5</span>
+                    </div>
+                    <p>daily report</p>
+                </div>
             </div>
-            <div class="col-sm-5ths">
-                <div class="corner-greate">
-                    <img src="image/write.svg " width="30px " alt=" ">
-                </div>
-                <div class="corner-small d-flex justify-content-center">
-                    <span class="number">2</span>
-                </div>
-                <p>daily report</p>
+            <div class="icon-slide justify-content-center d-flex d-sm-none mx-auto">
+                <span class="dot active"></span>
+                <span class="dot center"></span>
+                <span class="dot"></span>
             </div>
-            <div class="col-sm-5ths">
-                <div class="corner-greate">
-                    <img src="image/write.svg " width="30px " alt=" ">
-                </div>
-                <div class="corner-small d-flex justify-content-center">
-                    <span class="number ">3</span>
-                </div>
-                <p>daily report</p>
-            </div>
-            <div class="col-sm-5ths content-none">
-                <div class="corner-greate">
-                    <img src="image/write.svg " width="30px " alt=" ">
-                </div>
-                <div class="corner-small d-flex justify-content-center">
-                    <span class="number">4</span>
-                </div>
-                <p>daily report</p>
-            </div>
-            <div class="col-sm-5ths content-none">
-                <div class="corner-greate">
-                    <img src="image/write.svg " width="30px " alt=" ">
-                </div>
-                <div class="corner-small">
-                    <span class="number d-flex justify-content-center">5</span>
-                </div>
-                <p>daily report</p>
-            </div>
-        </div>
-        <div class="col-12 icon-slide">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
         </div>
     </section>
     <section class="wrapper">
         <div class="container">
             <div class="row box">
                 <div class="col-sm-6 col-12 content pl-0">
-                    <div class="content-title">
-                        <img class="img-responsive float-left" src="image/member.svg" alt=" ">
+                    <div class="content-title d-flex">
+                        <i class="ti-user"></i>
                         <p>Members</p>
                     </div>
                     <div class="meta-title">
@@ -177,23 +186,26 @@
                             <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s….</p>
                         </div>
                     </div>
-                    <button class="start-now btn-body"><span>START NOW</span></button>
+                    <div class="col-sm-6 col-12 pr-0 img-large d-block d-sm-none pt-2 ">
+                        <img class="img-responsive mx-auto" src="image/img-member.jpg" alt=" ">
+                    </div>
+                    <button class="btn-global btn-body"><span>START NOW</span></button>
                 </div>
-                <div class="col-sm-6 col-12 content-img pr-0">
-                    <img class="img-responsive" src="image/img-member.jpg" height="389px" alt=" ">
+                <div class="col-sm-6 col-12 pr-0 img-large d-none d-sm-block">
+                    <img class="img-responsive" src="image/img-member.jpg" alt=" ">
                 </div>
             </div>
         </div>
     </section>
-    <section class="wrapper">
+    <section class="wrapper shadow bg-white rounded">
         <div class="container">
             <div class="row box">
-                <div class="col-sm-6 col-12 content-img pl-0">
-                    <img class="img-responsive" src="image/daily-report.png" height="389px" alt=" ">
+                <div class="col-sm-6 col-12 img-large pl-0 d-none d-sm-block">
+                    <img class="img-responsive" src="image/daily-report.png" alt=" ">
                 </div>
                 <div class="col-sm-6 col-12 content pr-0">
-                    <div class="content-title">
-                        <img class="img-responsive float-left" src="image/smile.svg" alt=" ">
+                    <div class="content-title d-flex">
+                        <i class="ti-face-smile"></i>
                         <p>Customers</p>
                     </div>
                     <div class="meta-title">
@@ -213,7 +225,10 @@
                             <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s….</p>
                         </div>
                     </div>
-                    <button class="start-now btn-body"><span>START NOW</span></button>
+                    <div class="col-sm-6 col-12 img-large pl-0 d-block d-sm-none">
+                        <img class="img-responsive" src="image/daily-report.png" alt=" ">
+                    </div>
+                    <button class="btn-global btn-body"><span>START NOW</span></button>
                 </div>
 
             </div>
@@ -222,83 +237,99 @@
     <section class="our-customer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-12 justify-content-center title-customer">
+                <div class="col-sm-12 col-12 justify-content-center title-customer d-flex">
                     <p>Our customer</p>
                 </div>
-                <div class="col-sm-12 justify-content-between list-customer">
+                <div class="col-sm-12 justify-content-between list-customer d-flex">
                     <div class="customer-name">
-                        <div class="customer-img"><img src="image/icon-customer1.png" width="79.36px" alt=""></div>
-                        <div class="customer-job">
-                            <p>Duong NT</p>
-                            <p>Designer</p>
+                        <div class="customer-img">
+                            <img src="image/icon-customer1.png" alt="">
                         </div>
-                    </div>
-                    <div class="customer-name">
-                        <div><img class="img-reponsive" src="image/icon-customer1.png" width="79.36px" alt=""></div>
                         <div class="customer-job">
                             <p>Duong NT</p>
                             <p>Designer</p>
                         </div>
                     </div>
                     <div class="customer-name">
-                        <div><img class="img-reponsive" src="image/icon-customer1.png" width="79.36px" alt=""></div>
+                        <div class="customer-img">
+                            <img class="img-reponsive" src="image/icon-customer1.png" alt="">
+                        </div>
                         <div class="customer-job">
                             <p>Duong NT</p>
                             <p>Designer</p>
                         </div>
                     </div>
                     <div class="customer-name">
-                        <div><img class="img-reponsive" src="image/icon-customer1.png" width="79.36px" alt=""></div>
+                        <div class="customer-img">
+                            <img class="img-reponsive" src="image/icon-customer1.png" alt="">
+                        </div>
                         <div class="customer-job">
                             <p>Duong NT</p>
                             <p>Designer</p>
                         </div>
                     </div>
-                    <div class="customer-name content-none">
-                        <div><img class="img-reponsive" src="image/icon-customer1.png" width="79.36px" alt=""></div>
+                    <div class="customer-name d-none d-sm-block">
+                        <div class="customer-img">
+                            <img class="img-reponsive" src="image/icon-customer1.png" alt="">
+                        </div>
                         <div class="customer-job">
                             <p>Duong NT</p>
                             <p>Designer</p>
                         </div>
                     </div>
-                    <div class="customer-name content-none">
-                        <div><img class="img-reponsive" src="image/icon-customer1.png" width="79.36px" alt=""></div>
+                    <div class="customer-name d-none d-sm-block">
+                        <div class="customer-img">
+                            <img class="img-reponsive" src="image/icon-customer1.png" alt="">
+                        </div>
                         <div class="customer-job">
                             <p>Duong NT</p>
                             <p>Designer</p>
                         </div>
                     </div>
-                    <div class="customer-name content-none">
-                        <div><img class="img-reponsive" src="image/icon-customer1.png" width="79.36px" alt=""></div>
+                    <div class="customer-name d-none d-sm-block">
+                        <div class="customer-img">
+                            <img class="img-reponsive" src="image/icon-customer1.png" alt="">
+                        </div>
                         <div class="customer-job">
                             <p>Duong NT</p>
                             <p>Designer</p>
                         </div>
                     </div>
-                    <div class="customer-name content-none">
-                        <div><img class="img-reponsive" src="image/icon-customer1.png" width="79.36px" alt=""></div>
+                    <div class="customer-name d-none d-sm-block">
+                        <div class="customer-img">
+                            <img class="img-reponsive" src="image/icon-customer1.png" alt="">
+                        </div>
+                        <div class="customer-job">
+                            <p>Duong NT</p>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                    <div class="customer-name content-nnoe">
+                        <div class="customer-img">
+                            <img class="img-reponsive" src="image/icon-customer1.png" alt="">
+                        </div>
                         <div class="customer-job">
                             <p>Duong NT</p>
                             <p>Designer</p>
                         </div>
                     </div>
                 </div>
-                <div class="icon-slide d-flex justify-content-center content-mobile mx-auto pt-2">
-                    <div class="dot active"></div>
-                    <div class="dot center"></div>
-                    <div class="dot"></div>
+                <div class="icon-slide d-flex justify-content-center mx-auto">
+                    <span class="dot active"></span>
+                    <span class="dot center"></span>
+                    <span class="dot"></span>
                 </div>
-                <div class="customer-description d-flex justify-content-between">
-                    <div class="icon">
-                        <p>66</p>
+                <div class="customer-description d-flex col-12">
+                    <div class="icon justify-content-start">
+                        <span class="ti-quote-left"></span>
                     </div>
-                    <div class="content-description d-flex flex-column justify-content-center">
+                    <div class="content-description d-flex justify-content-end ">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
                             specimen book.
                         </p>
                     </div>
-                    <div class="icon d-flex flex-column justify-content-end">
-                        <p>99</p>
+                    <div class="icon d-flex justify-content-end">
+                        <span class="ti-quote-right"></span>
                     </div>
                 </div>
             </div>
@@ -308,8 +339,8 @@
         <div class="container">
             <div class="row box">
                 <div class="col-sm-6 col-12 content pl-0">
-                    <div class="content-title">
-                        <img class="img-responsive float-left" src="image/calendar.svg" alt=" ">
+                    <div class="content-title d-flex">
+                        <i class="ti-calendar"></i>
                         <p>Project</p>
                     </div>
                     <div class="meta-title">
@@ -320,9 +351,12 @@
                             specimen book. it has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. it was popularised in the 1960s with the release of letraset sheets containing lorem ipsum
                             passages, and more recently with desktop publishing software like aldus pagemaker including versions of lorem ipsum.</p>
                     </div>
-                    <button class="start-now btn-body"><span>START NOW</span></button>
+                    <div class="col-sm-6 col-12 img-large pl-0 d-block d-sm-none">
+                        <img class="img-responsive" src="image/daily-report.png" alt=" ">
+                    </div>
+                    <button class="btn-global btn-body"><span>START NOW</span></button>
                 </div>
-                <div class="col-sm-6 col-12 content-img pr-0">
+                <div class="col-sm-6 col-12 content-img pr-0 d-none d-sm-block">
                     <img class="img-responsive" src="image/daily-report.png" alt=" ">
                 </div>
             </div>
@@ -332,37 +366,41 @@
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-2 logo-footer">
-                        <div class="logo-erp">hapoeERP</div>
-                        <p class="content-none">Copyright 2017</p>
+                    <div class="col-sm-2 logo-footer col-12">
+                        <div class="logo-erp">hapoERP</div>
+                        <p class="d-none d-sm-block">Copyright 2017</p>
                     </div>
-                    <div class="col-sm-2 footer-flex-col get-in">
+                    <div class="col-sm-2 footer-flex-col get-in title-footer col-3">
                         <div class="first">get in touch</div>
                         <p>Contact us</p>
                         <p>Contact sales</p>
                     </div>
-                    <div class="col-sm-2 footer-flex-col learn-more">
+                    <div class="col-sm-2 footer-flex-col learn-more title-footer col-3">
                         <div class="first">learn more</div>
                         <p>About us</p>
                         <p>Contact sales</p>
                     </div>
-                    <div class="col-sm-2 footer-flex-col works">
+                    <div class="col-sm-2 footer-flex-col works title-footer col-3">
                         <div class="first">how to works</div>
                         <p>Contact us</p>
-                        <p>About hapo-erp</p>
+                        <p>About Hapo-ERP</p>
                     </div>
-                    <div class="col-sm-2 footer-flex-col legal">
+                    <div class="col-sm-2 footer-flex-col legal title-footer col-3">
                         <div class="first">legal</div>
                         <p>Terms of service</p>
                         <p>Privacy policy</p>
                     </div>
 
-                    <div class="col-sm-2 icon-media">
-                        <img src="image/facebook.svg" width="13px" alt="">
-                        <img src="image/twitter.svg" width="13px" alt="">
-                        <img src="image/youtube.svg" width="13px" alt="">
-                        <img src="image/linkedin.svg" width="13px" alt="">
-                        <p class="content-mobile">Copyright 2017</p>
+                    <div class="col-sm-2 media col-12">
+                        <div class="icon-media">
+                            <span class="ti-facebook"></span>
+                            <span class="ti-twitter"></span>
+                            <span class="ti-youtube"></span>
+                            <span class="ti-linkedin"></span>
+                        </div>
+                        <div class="d-sm-none hapo-page">
+                            <p>Copyright 2017</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+@import "variable.scss";
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
 h1,
 h2,
 h3,
@@ -48,33 +43,40 @@ button {
     src: url(../font/enso.ttf);
 }
 
-$color-btn: #8BC34A;
-$color-text: #283238;
-$color-title: #444444;
-$color-white: #FFFFFF;
-.col-sm-12,
-.col-md-12,
-.col-xl-12 {
-    display: flex;
+@font-face {
+    font-family: themify;
+    src: url(../font/themify.ttf);
 }
 
-button.start-now {
+.btn-global {
     height: 50px;
     width: 195px;
     color: $color-white;
     font-size: 16px;
-    border: 2px solid #8BC34A;
+    border: 2px solid $color-btn;
     border-radius: 100px;
     background: linear-gradient(311.12deg, #B4EC51 0%, #429321 100%);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
-.content-mobile {
-    display: none;
-}
-
 .members-content {
     margin: 17px 0;
+}
+
+.icon-slide {
+    padding-top: 20px;
+    .dot {
+        width: 9.71px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #979797;
+    }
+    .active {
+        background-color: $color-white;
+    }
+    .center {
+        margin: 0 22px;
+    }
 }
 
 .header {
@@ -121,9 +123,13 @@ button.start-now {
         text-align: center;
         align-items: center;
         padding-top: 53px;
-        img {
+        i {
+            height: 48px;
             width: 52px;
-            margin: 0 auto;
+            color: $color-text;
+            font-size: 48px;
+            letter-spacing: 4px;
+            line-height: 48px;
         }
         h3 {
             padding-top: 14px;
@@ -152,21 +158,28 @@ button.start-now {
                 max-width: 100%;
             }
         }
+        .img-large {
+            img {
+                height: 389px;
+                max-width: 100%;
+            }
+        }
         .content {
             max-width: 100%;
             .content-title {
-                height: 63px;
                 width: 363px;
-                line-height: 63px;
-                img {
-                    margin: 13px 0;
-                    width: 36px;
+                justify-content: start;
+                i {
+                    height: 36px;
+                    font-size: 36px;
+                    line-height: 63px;
                 }
                 p {
+                    color: $color-title;
                     font-size: 48px;
                     font-weight: 300;
-                    margin-left: 54px;
-                    color: $color-title
+                    line-height: 63px;
+                    margin-left: 19px;
                 }
             }
             .meta-title {
@@ -183,15 +196,13 @@ button.start-now {
                 letter-spacing: 0.15px;
                 padding-top: 25px;
                 padding-bottom: 30px;
+                line-height: 24px;
+                font-size: 13px;
                 img {
                     width: 18px;
                     height: 24px;
                     margin-right: 18px;
                     margin-bottom: 27px;
-                }
-                p {
-                    line-height: 24px;
-                    font-size: 13px;
                 }
             }
         }
@@ -220,8 +231,11 @@ button.start-now {
             width: 109.5px;
             border-radius: 50%;
             border: 2px solid $color-white;
-            img {
+            span {
+                width: 30px;
                 margin: 30px auto;
+                color: $color-white;
+                font-size: 30px;
             }
         }
         .corner-small {
@@ -256,13 +270,13 @@ button.start-now {
         }
     }
     .list-customer {
-        padding-top: 38px;
+        padding-top: 48px;
         .customer-name {
             img {
                 padding-bottom: 16px;
+                width: 79.36px;
             }
             .customer-job {
-                // margin-top: 16px;
                 color: $color-white;
                 width: 58px;
                 height: 31px;
@@ -274,42 +288,36 @@ button.start-now {
             }
         }
     }
-    .icon-slide {
-        .dot {
-            width: 9.71px;
-            height: 10px;
-            border-radius: 50%;
-            border: 1px solid #979797;
-        }
-        .active {
-            background-color: #D8D8D8;
-        }
-        .center {
-            margin: 0 22px;
-        }
-    }
     .customer-description {
+        width: 948px;
         color: $color-white;
-        margin: 0 96.64px;
+        margin: 0 8.47%;
         opacity: 0.4;
-        margin-top: 4px;
+        padding-top: 9px;
         .icon {
-            p {
-                font-family: 'Cabin', sans-serif;
-                width: 72px;
+            height: 186.5px;
+            flex-direction: column;
+            span {
                 height: 73px;
+                width: 72px;
+                opacity: 0.4;
+                color: $color-white;
                 font-size: 72px;
-                line-height: 73px;
                 letter-spacing: -0.14px;
+                line-height: 73px;
+                text-align: justify;
             }
         }
         .content-description {
-            flex-basis: 750px;
-            height: 215.5px;
+            flex-basis: 65.789%;
+            height: 141.5px;
+            margin: 0 27px;
+            flex-direction: column;
             p {
                 font-size: 18px;
                 line-height: 30px;
-                text-align: justify;
+                color: $color-white;
+                font-weight: 300;
                 letter-spacing: -0.03px;
                 text-align: justify;
             }
@@ -322,136 +330,50 @@ button.start-now {
     border: 1px solid #ECEFF1;
     background-color: #39474E;
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 480px) {
-    .col-12 {
-        padding: 0;
-    }
-    .content-none {
-        display: none;
-    }
-    .header {
-        height: 265.75px;
-        max-width: 480px;
-        background: {
-            image: url(../image/banner-mobile.jpg);
+    padding-top: 45px;
+    padding-bottom: 54px;
+    .logo-footer {
+        .logo-erp {
+            color: $color-btn;
+            font-family: Enso;
+            font-size: 24px;
+            line-height: 29px;
+            padding-bottom: 36px;
         }
-        .header-top {
-            padding-top: 15px;
-            padding-right: 23px;
-            a {
-                line-height: 36px;
-                font-size: 12px;
-                margin-right: 23px;
-                font-weight: 500;
-            }
-        }
-        .logo {
-            padding-top: 8px;
-            h1 {
-                font-size: 24px;
-                line-height: 29px;
-            }
-        }
-        .criteria {
-            padding-top: 20px;
-            img {
-                width: 20px;
-                margin: 0 auto;
-            }
-            h3 {
-                padding-top: 8px;
-                font-size: 18px;
-                line-height: 24px;
-            }
-        }
-        .slogan {
-            padding: 15px 0;
-            line-height: 11px;
-            width: 285px;
-            font-size: 9px;
-        }
-        .btn-top {
-            width: 144px;
-            height: 40px;
-            margin: 0 auto;
+        p {
+            color: $color-text-footer;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 13px;
         }
     }
-    .wrapper {
-        margin: 0 10.81px;
-        box {
-            .content-img {
-                padding: 0;
-            }
-            .content {
-                padding: 0;
-            }
+    .title-footer {
+        padding-top: 9px;
+        .first {
+            text-transform: uppercase;
+            color: $color-btn;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: -0.03px;
+            line-height: 18px;
+            padding-bottom: 15px;
+        }
+        p {
+            color: $color-text-footer;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 20px;
+        }
+    }
+    .media {
+        padding-top: 68px;
+        .icon-media {
+            width: 166px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            line-height: 13px;
+            color: $color-btn;
         }
     }
 }
-
-// Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) {
-//     .header {
-//         width: 100%;
-//         height: 875px;
-//         background: {
-//             image: url(../image/banner.jpg);
-//             size: cover;
-//             position: center center;
-//         }
-//         .header-top {
-//             font-size: 12px;
-//             padding-top: 43px;
-//             a {
-//                 color: $color-text;
-//                 letter-spacing: 1px;
-//                 line-height: 36px;
-//                 margin-right: 38px;
-//                 white-space: nowrap;
-//                 text-transform: uppercase;
-//             }
-//             .sign-in {
-//                 height: 36px;
-//                 width: 82px;
-//                 border: 2px solid $color-btn;
-//                 border-radius: 100px;
-//                 text-transform: uppercase;
-//                 letter-spacing: 1px;
-//                 font-size: 12px;
-//                 color: $color-btn;
-//                 line-height: 16px;
-//             }
-//         }
-//         .logo {
-//             padding-top: 165px;
-//             h1 {
-//                 color: #AED581;
-//                 font-family: Enso;
-//                 font-size: 64px;
-//                 line-height: 77px;
-//             }
-//         }
-//         .criteria {
-//             text-align: center;
-//             align-items: center;
-//             padding-top: 53px;
-//             img {
-//                 width: 52px;
-//                 margin: 0 auto;
-//             }
-//             h3 {
-//                 padding-top: 14px;
-//                 font-size: 36px;
-//                 line-height: 48px;
-//             }
-//         }
-//         .slogan {
-//             font-size: 18px;
-//             font-style: italic;
-//             color: $color-text;
-//             padding-top: 53px;
-//         }
-//     }
-// }
