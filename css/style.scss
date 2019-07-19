@@ -38,6 +38,22 @@ button {
     box-shadow: none;
 }
 
+#btnUpTop {
+    display: none;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: $color-btn;
+    border-radius: 20%;
+    color: white;
+    padding: 14px;
+}
+
+#btnUpTop:hover {
+    background: #B4EC51;
+}
+
 @font-face {
     font-family: Enso;
     src: url(../font/enso.ttf);
@@ -95,18 +111,15 @@ button {
             letter-spacing: 1px;
             line-height: 36px;
             margin-right: 38px;
-            white-space: nowrap;
-            text-transform: uppercase;
         }
         .sign-in {
+            color: $color-btn;
             height: 36px;
             width: 82px;
             border: 2px solid $color-btn;
             border-radius: 100px;
-            text-transform: uppercase;
             letter-spacing: 1px;
             font-size: 12px;
-            color: $color-btn;
             line-height: 16px;
         }
     }
@@ -120,13 +133,11 @@ button {
         }
     }
     .criteria {
-        text-align: center;
-        align-items: center;
         padding-top: 53px;
         i {
+            color: $color-text;
             height: 48px;
             width: 52px;
-            color: $color-text;
             font-size: 48px;
             letter-spacing: 4px;
             line-height: 48px;
@@ -139,14 +150,10 @@ button {
         }
     }
     .slogan {
-        font-size: 18px;
-        font-style: italic;
         color: $color-text;
+        font-size: 18px;
         padding-top: 53px;
         padding-bottom: 31px;
-    }
-    .btn-top {
-        margin: 0 auto;
     }
 }
 
@@ -168,7 +175,6 @@ button {
             max-width: 100%;
             .content-title {
                 width: 363px;
-                justify-content: start;
                 i {
                     height: 36px;
                     font-size: 36px;
@@ -213,14 +219,12 @@ button {
     background: linear-gradient(315deg, #B4EC51 0%, #429321 100%);
     padding-top: 68.75px;
     padding-bottom: 70px;
-    .col-sm-5ths {
+    .corner {
         padding-right: 0px;
         padding-left: 0px;
-        text-align: center;
         p {
-            width: 69px;
             color: $color-white;
-            text-transform: uppercase;
+            width: 69px;
             letter-spacing: 1.33px;
             line-height: 21px;
             margin: 0 auto;
@@ -276,12 +280,14 @@ button {
                 padding-bottom: 16px;
                 width: 79.36px;
             }
+            &:hover {
+                transform: scale(1.2);
+            }
             .customer-job {
                 color: $color-white;
                 width: 58px;
                 height: 31px;
                 margin: 0 auto;
-                text-align: center;
                 p {
                     font-size: 11px;
                 }
@@ -350,7 +356,6 @@ button {
     .title-footer {
         padding-top: 9px;
         .first {
-            text-transform: uppercase;
             color: $color-btn;
             font-size: 13px;
             font-weight: 500;
@@ -358,7 +363,8 @@ button {
             line-height: 18px;
             padding-bottom: 15px;
         }
-        p {
+        a {
+            display: block;
             color: $color-text-footer;
             font-size: 10px;
             font-weight: 500;
