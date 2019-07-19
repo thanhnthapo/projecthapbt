@@ -1,0 +1,199 @@
+@media (max-width: 480px) {
+  .btn-global {
+    width: 144px;
+    height: 40px;
+    border: 0px solid #8BC34A;
+  }
+
+  .header {
+    height: 265.75px;
+    max-width: 480px;
+    background-image: url(../image/banner-mobile.jpg);
+  }
+  .header .header-top {
+    padding-top: 15px;
+    padding-right: 23px;
+  }
+  .header .header-top a {
+    line-height: 36px;
+    font-size: 12px;
+    margin-right: 23px;
+    font-weight: 500;
+  }
+  .header .logo {
+    padding-top: 8px;
+  }
+  .header .logo h1 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .header .criteria {
+    padding-top: 20px;
+  }
+  .header .criteria i {
+    font-size: 18px;
+    letter-spacing: -0.04px;
+    line-height: 20px;
+  }
+  .header .criteria h3 {
+    padding-top: 8px;
+    color: #283238;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  .header .slogan {
+    padding: 15px 0;
+    line-height: 11px;
+    width: 285px;
+    font-size: 9px;
+  }
+  .header .btn-top {
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    margin: 0 10.81px;
+  }
+  .wrapper .box {
+    padding: 30px 0;
+  }
+  .wrapper .box .content-img {
+    padding: 0;
+  }
+  .wrapper .box .content {
+    padding: 0;
+  }
+  .wrapper .box .content .content-title {
+    width: 100%;
+    justify-content: center;
+  }
+  .wrapper .box .content .content-title i {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .wrapper .box .content .content-title p {
+    font-size: 24px;
+    line-height: 32px;
+    margin-left: 14px;
+  }
+  .wrapper .box .content .content-img {
+    padding-top: 10px;
+  }
+  .wrapper .box .content .meta-title {
+    line-height: 24px;
+    font-size: 13px;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .wrapper .box .content .content-description {
+    padding: 0;
+    padding-top: 20px;
+    line-height: 21px;
+  }
+  .wrapper .box .content .img-large img {
+    width: 100%;
+    height: 368px;
+  }
+  .wrapper .box .content .btn-body {
+    margin: 0 33.6%;
+    margin-top: 20px;
+  }
+
+  .manager {
+    padding-top: 38.75px;
+    padding-bottom: 39px;
+  }
+  .manager .col-sm-5ths p {
+    width: 61px;
+    font-size: 14px;
+  }
+  .manager .icon-slide {
+    padding-top: 25px;
+  }
+
+  .our-customer {
+    background-image: url(../image/our-custommer.jpg);
+    background-size: 100% 100%;
+    padding-top: 25px;
+    padding-bottom: 26px;
+  }
+  .our-customer .title-customer p {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300;
+  }
+  .our-customer .list-customer {
+    padding-top: 38px;
+  }
+  .our-customer .list-customer .customer-name img {
+    padding-bottom: 16px;
+    width: 77.05px;
+  }
+  .our-customer .list-customer .customer-name .customer-job {
+    width: 48.31px;
+    height: 49px;
+  }
+  .our-customer .customer-description {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 16px;
+  }
+  .our-customer .customer-description .icon {
+    flex-direction: row;
+    height: 46px;
+  }
+  .our-customer .customer-description .icon span {
+    width: 62.14px;
+    opacity: 0.4;
+    font-size: 48px;
+    letter-spacing: -0.9px;
+    line-height: 48px;
+  }
+  .our-customer .customer-description .content-description {
+    padding-top: 5px;
+    flex-direction: column;
+    margin: 0;
+    flex-basis: 0;
+  }
+  .our-customer .customer-description .content-description p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .footer {
+    padding-top: 24px;
+    padding-bottom: 26.31px;
+  }
+  .footer .logo-footer .logo-erp {
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+  .footer .footer-flex-col {
+    font-size: 12px;
+    line-height: 16px;
+    padding-right: 0;
+  }
+  .footer .footer-flex-col a {
+    line-height: 20px;
+  }
+  .footer .media {
+    padding-top: 25px;
+  }
+  .footer .media .icon-media {
+    display: flex;
+    max-width: 25%;
+    justify-content: space-between;
+  }
+  .footer .media .hapo-page {
+    width: 75%;
+    color: #D0D8DC;
+    font-size: 10px;
+  }
+  .footer .media .hapo-page p {
+    text-align: right;
+  }
+}
+
+/*# sourceMappingURL=reponsive.css.map */
